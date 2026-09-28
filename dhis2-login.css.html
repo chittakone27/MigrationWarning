@@ -1,0 +1,193 @@
+<style type="text/css">
+html,
+body {
+    background-color: #1d5288;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.laoFont{
+font-size: 16px;
+font-family: "Phetsarath OT","Saysettha OT","Saysettha Lao";
+}
+
+
+#loginField {
+    width: 400px;
+    margin: 140px auto 0 auto;
+}
+
+#loginArea {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 400px;
+    margin: 0 auto 100px;
+    padding: 30px;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.75);
+}
+
+#loginArea .thumbnail {
+    background: #EF3B3A;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px;
+    padding: 50px 30px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    box-sizing: border-box;
+}
+
+#loginArea .thumbnail img {
+    display: block;
+    width: 100%;
+}
+
+#loginArea input[type=text],
+input[type=password] {
+    outline: 0 !important;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    height: 47px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+#loginArea #submit {
+    outline: 0;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+background: rgb(43,103,148);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    height: 47px;
+}
+
+#loginArea .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+#loginArea .message a {
+    color: #EF3B3A;
+    text-decoration: none;
+}
+
+#loginArea .register-form {
+    display: none;
+}
+
+#bannerArea {
+    margin-bottom: 0px;
+    border: none;
+    text-align: center;
+}
+
+
+/* END Form */
+
+#titleArea {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+/* ===== Server migration warning =====
+   Text comes from: System Settings > Appearance > "Application notification" */
+#notificationArea {
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+    padding: 16px 20px 16px 56px;
+    position: relative;
+    background-color: #fff8e1;
+    color: #5d4000;
+    border: 1px solid #f5c542;
+    border-left: 6px solid #f59e0b;
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* warning icon */
+#notificationArea::before {
+    content: "!";
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 50%;
+    background: #f59e0b;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* hide the box when the notification setting is empty */
+#notificationArea:empty {
+    display: none;
+}
+
+#notificationArea .warn-title {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    color: #7a4b00;
+    margin-bottom: 4px;
+}
+
+#notificationArea .warn-date {
+    font-weight: bold;
+    color: #b42318;
+}
+
+#notificationArea hr {
+    border: 0;
+    border-top: 1px dashed #f5c542;
+    margin: 10px 0;
+}
+</style>
